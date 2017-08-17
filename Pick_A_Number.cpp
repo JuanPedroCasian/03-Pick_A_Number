@@ -107,7 +107,7 @@ int main () {
 
     NumberOfTries = NumberOfTries + 1;
 
-if (GuessedValue > SecretValue) {
+if (GuessedValue > SecretValue) {   //Use of if command to give clues about the secret number
 
   cout << "Your guess was too high!"; cout << "Please Try again" << endl;
   cin >> GuessedValue;
