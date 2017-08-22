@@ -4,14 +4,13 @@ Aug 15, 2017
 Juan Casian
 */
 
-//********* Preguntar de el conteo **********
 
 #include <iostream> // input and output stream
-#include <stdlib.h> //imports the comand of "rand" (random) and "srand"
-#include <time.h> /*imports time ***** preguntar ******
+#include <cstdlib> //imports the comand of "rand" (random) and "srand"
+#include <ctime> /*imports time funcion para regresar milisegundos desde un punto en tiempo
                     */
 
-#include <stdio.h> /*imports NULL,  ****** preguntar ******
+#include <cstdio> /*imports NULL es igual nada
                       */
 
 using namespace std; //importing std family namespace
@@ -19,9 +18,12 @@ using namespace std; //importing std family namespace
 int main () {
 
   int SecretValue, GuessedValue, NumberOfTries;
-  NumberOfTries = 1;
+  NumberOfTries = 0;
 
-  srand (time(NULL));
+  srand (time(NULL)); /* time(NULL) means to take time as cero from the beginning of
+                          the program, so it will run in miliseconds from the time you
+                          start the program */
+
                  /* This command is crucial, because it
                                         this is what makes the random number
                                         given by rand to be different each time
